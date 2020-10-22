@@ -15,3 +15,9 @@ java -jar ./target/rabbitmq-1.0.jar --spring.profiles.active=publish-subscribe,r
 
 java -jar ./target/rabbitmq-1.0.jar --spring.profiles.active=publish-subscribe,sender
 ```
+
+```
+java -jar ./target/rabbitmq-1.0.jar --spring.profiles.active=routing,receiver
+
+java -jar ./target/rabbitmq-1.0.jar --spring.profiles.active=routing,sender
+```
