@@ -21,3 +21,9 @@ java -jar ./target/rabbitmq-1.0.jar --spring.profiles.active=routing,receiver
 
 java -jar ./target/rabbitmq-1.0.jar --spring.profiles.active=routing,sender
 ```
+
+```
+java -jar ./target/rabbitmq-1.0.jar --spring.profiles.active=topics,receiver
+
+java -jar ./target/rabbitmq-1.0.jar --spring.profiles.active=topics,sender
+```
