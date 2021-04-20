@@ -1,5 +1,19 @@
 # Présentation des différentes possibilitées de RabbitMQ
 
+Pour récupérer le jar rien de plus simple aller dans le menu action du répertoire et cliquer sur la dernière action en succès et télécharger l'artifact
+
+## Installation rapide de rabbitMq
+Utilisation d'un container docker, ici rabbitMq n'est pas sécurisé par un login password mais bon pour des exemple ceci n'est pas nécéssaire.
+```sh
+docker run -d --hostname my-rabbit --name some-rabbit -p 5672:5672 rabbitmq:3-management
+```
+
+### Pour supprimer le container et l'image
+```sh
+docker rm some-rabbit
+docker rmi rabbitmq:3-management
+```
+
 ## 01 Hello world
 ![Hello world](./img/01-Hello.png)  
 Ici nous avons le Producer (P) qui insère un message dans la queues qui est ensuite récupérer par le Consumer (C)
