@@ -1,4 +1,4 @@
-name: test_and_build_maven
+name: build-jar
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v2
 
@@ -17,6 +17,7 @@ jobs:
           java-version: 11
 
       - name: Maven package
+        working-directory: ./rabbitmq
         run: mvn package
 
       - name: Upload jar
