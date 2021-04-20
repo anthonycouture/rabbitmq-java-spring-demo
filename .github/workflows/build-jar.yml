@@ -21,6 +21,7 @@ jobs:
         run: mvn package
 
       - name: Upload jar
+        working-directory: ./rabbitmq
         uses: actions/upload-artifact@v2.2.2
         with:
           name: rabbitmq-java-spring-jar
