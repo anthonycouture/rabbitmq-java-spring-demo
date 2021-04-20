@@ -22,7 +22,6 @@ jobs:
 
       - name: Upload jar
         uses: actions/upload-artifact@v2.2.2
-        working-directory: ./rabbitmq
         with:
           name: rabbitmq-java-spring-jar
-          path: target/*.jar
+          path: rabbitmq/target/*.jar
