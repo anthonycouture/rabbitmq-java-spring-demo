@@ -43,14 +43,6 @@ public class RoutingConfig {
         }
 
         @Bean
-        public Binding binding1b(DirectExchange direct,
-                                 Queue autoDeleteQueue1) {
-            return BindingBuilder.bind(autoDeleteQueue1)
-                    .to(direct)
-                    .with("black");
-        }
-
-        @Bean
         public Binding binding2a(DirectExchange direct,
                                  Queue autoDeleteQueue2) {
             return BindingBuilder.bind(autoDeleteQueue2)
